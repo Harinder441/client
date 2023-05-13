@@ -1,0 +1,118 @@
+/* Start--Hero Section */
+.hero-section {
+    position: relative;
+    height: 500px; 
+    flex-direction: column;
+    
+  }
+  
+  
+  .logo-container {
+    position: absolute;
+    top: 2%;
+    left: 2%;
+    width: 8rem;
+    height: 8rem;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+  
+  .logo-container img {
+    max-width: 100%;
+    max-height: 100%;
+  }
+  
+  .text-container {
+    position: absolute;
+    top:10%;
+    text-align: center;    
+    
+  }
+
+  .text-container::after{
+   
+    --s:4.8rem;
+    content: '';
+    position: absolute;
+    /*TODO to be changed by calc */
+    bottom: -60%;
+    right: 10%;
+    height: calc(var(--s)*2.3);
+    width: calc(var(--s)*1.5);
+    background-image: url(../../assets/images/headleaf.png);
+    background-size: calc(var(--s));
+    background-repeat: no-repeat;
+    transform: rotate(68deg);
+    z-index: -1;
+  }
+  .text-container h1{
+    font-size: 4.0rem;
+  }
+  .text-container h2{
+    font-size: 2.3rem;
+  }
+
+ .hero-button{
+  border: 0;
+  font-family: var(--font-primary);
+  padding: 1rem 2rem;
+  border-radius: 4rem;
+  background: linear-gradient(to right, var(--navbg-dark) 40%,var(--navbg-light)); 
+  color: var(--fg-color);
+  text-decoration: none;
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  transition: all 0.2s ease-in-out;
+ }
+ .hero-button:hover {
+  transform: scale(1.2);
+  opacity: 0.7;
+  color: var(--fg-color);
+}
+
+  nav {
+    font-family: var(--font-primary);
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  nav ul {
+    display: flex;
+    list-style: none;
+  }
+  
+  nav li {
+  
+    width:9rem;
+    text-align: center;
+    padding: 3.2rem 0;
+    background-size:8rem;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: all 0.2s ease-in-out;
+  }
+  nav li:hover {
+    transform: scale(1.1);
+  }
+  nav li a{
+    text-decoration: none;
+    color:inherit;
+    font-size: 1.2rem;
+    margin: auto 0;
+    text-transform: uppercase;
+  }
+  .darknav{
+    background-color:var(--navbg-dark);
+    background-image: url(../../assets/images/leafnavw.png);
+    
+  }
+
+  .lightnav{
+    background-color: var(--navbg-light) ;
+    color: var(--bg-color);
+    background-image: url(../../assets/images/leafnavbb.png);
+
+  }
+  /* End--Hero Section */

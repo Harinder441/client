@@ -51,7 +51,7 @@ section{
   right: 0;
   height: 100%;
   width: 150px; 
-  background-image: url(../public/assets/leafborder.png);
+  background-image: url(assets/images/leafborder.png);
   background-repeat:repeat-y;
   background-size: 170px;
   
