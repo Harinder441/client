@@ -1,0 +1,31 @@
+.main-button{
+    border: 0;
+    font-family: var(--font-primary);
+    padding: 1rem 2rem;
+    border-radius: 4rem;
+    background: linear-gradient(to right, var(--navbg-dark) 40%,var(--navbg-light)); 
+    color: var(--fg-color);
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: all 0.2s ease-in-out;
+   }
+   .main-button:hover {
+    transform: scale(1.2);
+    opacity: 0.7;
+    color: var(--fg-color);
+  }
+
+  .second-button {
+    border: 0;
+    background-color: var(--navbg-dark);
+    color:var(--fg-color);
+    text-align: center;
+    padding: 5px;
+    border-radius:5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .second-button:hover {
+    background-color: var(--navbg-light);
+  }
+  

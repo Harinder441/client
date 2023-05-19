@@ -74,6 +74,19 @@ section{
   margin-bottom: 2%;
   text-transform: uppercase;
 }
+.font-size-paragraph{
+  font-size: 1.1rem;
+  line-height: 1.3;
+}
+.color-text{
+  color: var(--text-color);
+}
+.color-fg{
+  color: var(--fg-color);
+}
+.font-primary{
+
+}
 
 /* reusable styles end */
 

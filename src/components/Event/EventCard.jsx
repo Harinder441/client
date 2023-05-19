@@ -1,18 +1,29 @@
 import React from 'react';
+import { Card, Button } from 'react-bootstrap';
 import './Event.css';
+import ButtonSecond from '../UI/ButtonSecond';
+
 function Event(props) {
-    return (
-        <>
-      
-            <div className="event-card">
-                <img src="assets/event-image.jpg" alt="Event Image" />
-                <h3>Event Topic</h3>
-                <p>Event Description</p>
-                <p>Date: <time dateTime="2023-06-01">June 1, 2023</time></p>
-                <a href="#" className="register-button">View Details</a>
-            </div>
-        </>
-    );
+  const { imageSrc, title,speaker, description } = props;
+
+  return (
+    <>
+      <Card className="event-card">
+        <Card.Img variant="top" src={imageSrc} alt="Event Image" />
+        <Card.Header ><Card.Title className='color-fg'>{title}</Card.Title>
+          <Card.Subtitle>{speaker}</Card.Subtitle>
+        </Card.Header>
+        <Card.Body>
+          <Card.Text>{description}</Card.Text>
+          
+        </Card.Body>
+        <Card.Footer>
+        <ButtonSecond >View Details</ButtonSecond>
+        </Card.Footer>
+
+      </Card>
+    </>
+  );
 }
 
 export default Event;
