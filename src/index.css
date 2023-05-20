@@ -8,10 +8,15 @@
    --font-primary:'Oregano', cursive;
    --font-secondary:sans-serif;
    --text-color:#ccc14f;
+   --gradient-color:linear-gradient(to right, var(--navbg-dark) 40%,var(--navbg-light));
+   --shadow-color:rgb(17, 17, 17);
+   --fs-heading:2.2rem;
+   --fs-subheading:1.5rem;
+   --fs-paragraph:1.1rem;
+   --fs-button:1.2rem;
+   --fs-large:2.5rem;
 }
 
-
-/* Global styles start */
 *{
   margin: 0;
   padding: 0;
@@ -24,7 +29,8 @@ body{
   
 }
 .page-container{
-  padding: 0 5%;
+  margin: 0 10%;
+  box-shadow:-8px 0 68px -12px var(--shadow-color), 8px 0 68px -12px var(--shadow-color);
 }
 h1,h2,h3,h4{
   font-family: var(--font-primary);
@@ -33,49 +39,17 @@ h1,h2,h3,h4{
 }
 section{
  padding: 5% 0;
- border-top: 1px groove grey;
-}
-/* Global styles end*/
-
-
-/* reusable styles start */
-.border-right {
-  position: relative;
-  z-index: 1;
-}
-/* TODO refactar the following */
-.border-right::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  right: 0;
-  height: 100%;
-  width: 150px; 
-  background-image: url(assets/images/leafborder.png);
-  background-repeat:repeat-y;
-  background-size: 170px;
-  
+ box-shadow:0 4px 5px -3px var(--shadow-color);
 }
 
-.flex-center{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.section-seprater{
-
-  border:none;
-  border-top:1px groove grey;
-
-}
 .section-heading{
-  font-size: 2.2rem;
+  font-size: var(--fs-heading);
   margin-bottom: 2%;
   text-transform: uppercase;
+  text-align: center;
 }
 .font-size-paragraph{
-  font-size: 1.1rem;
+  font-size: var(--fs-paragraph);
   line-height: 1.3;
 }
 .color-text{
@@ -85,8 +59,7 @@ section{
   color: var(--fg-color);
 }
 .font-primary{
-
+  font-family: var(--font-primary);
 }
 
-/* reusable styles end */
 

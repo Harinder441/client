@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Row, Col, Button } from 'react-bootstrap';
+import { Container, Row, Col} from 'react-bootstrap';
 import './About.css';
 import logo from '../../assets/images/logo.jpeg'
 import ButtonMain from '../UI/ButtonMain';
@@ -13,7 +13,7 @@ export default function VisionMission() {
             <img className="me-1" src={logo} alt="Curry Leaf Logo" width="150px" />
           </Col>
           <Col md={8}>
-              <h2 className="section-heading">Our Vision &amp; Mission</h2>
+              <h2 className="section-heading text-start">Our Vision &amp; Mission</h2>
               <p className=" font-size-paragraph color-text">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis bibendum est vitae orci suscipit, ut
                 eleifend urna sodales. Aliquam erat volutpat. Sed ullamcorper neque in eleifend malesuada. Pellentesque

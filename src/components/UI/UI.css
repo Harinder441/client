@@ -1,3 +1,4 @@
+/* TODO fixed values to be removed in UI */
 .main-button{
     border: 0;
     font-family: var(--font-primary);
@@ -27,5 +28,47 @@
   
   .second-button:hover {
     background-color: var(--navbg-light);
+  }
+
+  
+  .main-carousel .item-container {
+    display: flex;
+    gap: 2%;
+    align-items: center;
+    flex:1;
+  }
+
+  .leaf-border-left {
+    position: relative;
+    z-index: 1;
+  }
+  /* TODO refactar the following */
+  .leaf-border-left::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 150px; 
+    background-image: url(../../assets/images/leafborderleft.png);
+    background-repeat:repeat-y;
+    background-size: 170px;
+    
+  }
+  .leaf-border-right {
+    position: relative;
+    z-index: 1;
+  }
+  .leaf-border-right::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 150px; 
+    background-image: url(../../assets/images/leafborder.png);
+    background-repeat:repeat-y;
+    background-size: 170px;
+    
   }
   

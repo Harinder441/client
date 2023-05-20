@@ -1,71 +1,27 @@
 .footer {
     color: var(--text-color);
     padding: 5% 5%;
-    display: flex;
-    flex-wrap: wrap;
-    /* justify-content: space-between; */
-    font-size: 1.1rem;
+    font-size: var(--fs-paragraph);
+    box-shadow:inset 0 2px 5px rgba(255, 255, 255, 0.1) ;
   }
-  
-  .footer-links {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap:2rem;
-    width:70%;
-  }
-  
-  
-  
-  .footer-list ul {
-    list-style: none;
-  }
-  
+
   .footer-list h4 {
-    margin-bottom: 4%;
-    font-size: 1.4rem;
+    font-size: var(--fs-subheading);
     color: var(--fg-color);
   }
-  
-  .footer-list a {
-    color: inherit;
-    text-decoration: none;
-    display: block;
-    margin-bottom: 5px;
+  .footer-list-group a:hover{
+    color: var(--fg-color);
   }
-  
-  .footer-info {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    width:30%;
-  }
-  
-  .footer-email{
-    margin-bottom: 5%;
-  }
-  
   .footer-email a {
     color: inherit;
     text-decoration: none;
   }
-  
-  .footer-social {
-    display: flex;
-  }
-  
   .footer-social a {
-    margin-right: 10px;
     color: var(--fg-color);
-    text-decoration: none;
-    font-size: 1.3rem;
-  }
-  
-  .footer-social i {
+    font-size: var(--fs-subheading);
     transition: color 0.3s ease-in-out;
   }
-  
-  .footer-social i:hover {
+  .footer-social a:hover {
     color: var(--text-color);
   }
   

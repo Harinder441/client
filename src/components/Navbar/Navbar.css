@@ -1,0 +1,24 @@
+/* TODO fix size issue */
+/* TODO make custom class for anchor tags*/
+
+.main-navbar{
+    background-color: var(--bg-color);
+    color: var(--fg-color);
+    box-shadow:0 2px 5px rgba(255, 255, 255, 0.1) ;
+
+}
+
+.main-navbar .navbar-brand{
+    font-size:var(--fs-heading);
+    color:inherit;
+}
+
+.main-navbar .special-link,.main-navbar .nav-link {
+    font-size: var(--fs-button);
+}
+
+.main-navbar .nav-link{
+    text-transform: uppercase;
+    background: none;
+
+}

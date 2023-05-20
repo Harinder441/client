@@ -1,6 +1,9 @@
 /* Start--Hero Section */
-/* TODO have consistensy is font size of elements */
-
+/* TODO have consistensy is font size of elements  heeo*/
+.hero-section{
+  border: none;
+  padding:2% 0;
+}
 .hero-container {
   position: relative;
   height: 500px;

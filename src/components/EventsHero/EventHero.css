@@ -1,0 +1,62 @@
+.event-hero-card {
+    position: relative;
+    height: 500px;
+  }
+  
+  .event-hero-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  
+  }
+  .event-hero-image-container{
+    width: 100%;
+    height: 100%;
+  }
+  .event-hero-image-container::after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top:0;
+    left:0;
+    background-color: rgba(0, 0, 0, 0.438);
+  }
+  
+  .event-hero-content {
+    position: absolute;
+    top: 50%;
+    right: 10%;
+    width:40%;
+    transform: translateY(-50%);
+    animation: popup 2s;
+    
+  }
+  @keyframes popup {
+    0% {
+        transform: translate(-200%,-50%);
+      
+    }
+    100% {
+        transform: translateX(0,-50%);
+   
+    }
+    
+  }
+  
+  .event-hero-heading {
+    font-size: var(--fs-large);
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .event-hero-subheading {
+    font-size: var(--fs-paragraph);
+    color:var(--text-color);
+  }
+  
+  .carousel-indicators {
+    bottom: 2%;
+    text-align: center;
+  }
+  

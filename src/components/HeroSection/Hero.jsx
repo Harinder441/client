@@ -1,16 +1,16 @@
 import React from 'react';
-import { Container, Row, Col, Button, Nav,Image } from 'react-bootstrap';
+import { Container,Nav,Image } from 'react-bootstrap';
 import './Hero.css';
 import logo from '../../assets/images/logo.jpeg';
-import ButtonMain from '../../components/UI/ButtonMain';
+import ButtonMain from '../UI/ButtonMain';
 export default function Hero() {
   return (
     <section className="hero-section">
       <Container className=" d-flex  align-items-center justify-content-center hero-container">
-        <div className="logo-container position-absolute top-0 start-0">
+        <div className="logo-container position-absolute top-0 start-0 ms-3">
           <Image roundedCircle="true"  src={logo} alt="Curry Leaf logo"  />
         </div>
-        <div className="text-center text-container position-absolute top-0">
+        <div className="text-center text-container position-absolute top-0 mt-2 ">
           <h1>Curry Leaf</h1>
           <h2>Mathematics Club of MTTS alumni</h2>
         </div>

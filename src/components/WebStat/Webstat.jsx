@@ -4,9 +4,9 @@ import './Webstat.css'
 export default function Webstat() {
   return (
     <section className="website-stats">
-    <div className="stats-container">
-    <WebstatCard/>
-    <WebstatCard className="border"/>
+    <div className="d-flex stats-container">
+    <WebstatCard className="stats-border-right"/>
+    <WebstatCard className="stats-border-right"/>
     <WebstatCard/>
     </div>
   </section>
