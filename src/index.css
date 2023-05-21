@@ -30,6 +30,7 @@ body{
 }
 .page-container{
   margin: 0 10%;
+  margin-top: 80px;
   box-shadow:-8px 0 68px -12px var(--shadow-color), 8px 0 68px -12px var(--shadow-color);
 }
 h1,h2,h3,h4{

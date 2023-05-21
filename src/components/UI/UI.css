@@ -30,14 +30,17 @@
     background-color: var(--navbg-light);
   }
 
-  
-  .main-carousel .item-container {
+    /* .main-carousel .item-container {
     display: flex;
     gap: 2%;
     align-items: center;
     flex:1;
   }
-
+ */
+ .main-carousel .carousel-control-next, .main-carousel .carousel-control-prev{
+  width:fit-content;
+  padding: 0 1%;
+ }
   .leaf-border-left {
     position: relative;
     z-index: 1;

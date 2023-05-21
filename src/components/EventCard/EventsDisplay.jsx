@@ -4,7 +4,7 @@ import './Event.css';
 import eventImage from '../../assets/images/event-image.jpg';
 import ButtonMain from '../UI/ButtonMain';
 import CarouselMain from '../UI/CarouselMain';
-export default function EventsDisplay(props) {
+export default function EventsDisplay({showaAllButton,heading}) {
   var text = "Lorem, ipsum dolor sit amet. Autem tempore  blanditiis possimus rerum! Possimus?";
   const events = [
     { title: "Event 1", description: text, speaker: "A. bnmsk" },
@@ -27,14 +27,14 @@ export default function EventsDisplay(props) {
   ));
   return (
     <section className="featured-events">
-      <h2 className="section-heading">{props.heading}</h2>
+      <h2 className="section-heading">{heading}</h2>
       <CarouselMain items={items} chunkSize={3}></CarouselMain>
-      <div className="d-flex justify-content-center mt-4 " >
+      {showaAllButton && <div className="d-flex justify-content-center mt-4 " >
         <ButtonMain href="#" className="show-all-button px-3 py-2" >
           Show All
         </ButtonMain>
         
-      </div>
+      </div>}
     </section>
   );
 }
