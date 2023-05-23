@@ -11,15 +11,15 @@ export default function App() {
   const [isNavVisible, setNavVisible] = useState(true);
   const router = createBrowserRouter([
     {
-      path: "/",
+      path: "home",
       element: <Home setNavVisible={setNavVisible} />,
     },
     {
-      path: "/events",
+      path: "events",
       element: <EventPage />,
     },
     {
-      path: "/about",
+      path: "about",
       element: <AboutPage />,
     }
   ]);
