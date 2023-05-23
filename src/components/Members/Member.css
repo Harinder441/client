@@ -1,0 +1,11 @@
+.member-card .card-title{
+    font-size: var(--fs-subheading);
+    font-family: var(--font-primary);
+    text-transform: capitalize;
+
+}
+.member-card .card-subtitle{
+    font-size: var(--fs-paragraph);
+
+
+}

@@ -1,26 +1,22 @@
 import React from 'react'
-import NavbarMain from '../../components/Navbar/NavbarMain'
-import Footer from '../../components/Footer/Footer'
-import SideLeafBorder from '../../components/UI/SideLeafBorder'
-import VisionMission from '../../components/About/VisionMission'
 import Introduction from '../../components/About/Introduction'
 import MemberDisplay from '../../components/Members/MemberDisplay'
-
-
+import { Container } from 'react-bootstrap'
 import './AboutPage.css'
 export default function AboutPage() {
   return (
     <div className='about-page'>
-       <NavbarMain/>
-       <SideLeafBorder left={true} right={true}>
-      <div className="page-container">
-        <Introduction/>
-        <VisionMission/>
+     
+  
+      {/* <Container className="text-center py-4">
+      <h1 className="about-heading">Welcome to Curry Leaf</h1>
+      <p className="about-subheading">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, molestiae!</p>
+      </Container> */}
+       <Introduction />
+  
         <MemberDisplay/>
 
-       </div>
-       </SideLeafBorder>
-       <Footer/>
+
     </div>
   )
 }

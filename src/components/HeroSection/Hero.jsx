@@ -20,23 +20,23 @@ export default function Hero() {
         </div>
         <Nav className="d-flex justify-content-center bot-navbar position-absolute bottom-0 start-0 w-100">
           <Nav.Item className ="nav-item dark-nav">
-            <Nav.Link className="nav-link"  href="Event/event.html">
-              Events
+            <Nav.Link className="nav-link"  href="/events">
+            ALL Events
             </Nav.Link>
           </Nav.Item>
           <Nav.Item className="nav-item light-nav">
-            <Nav.Link className="nav-link"  href="#">
-              Link 2
+            <Nav.Link className="nav-link"  href="/">
+            Contact Us 
             </Nav.Link>
           </Nav.Item>
           <Nav.Item className="nav-item dark-nav">
-            <Nav.Link className="nav-link"  href="#">
-              Link 3
+            <Nav.Link className="nav-link"  href="/about">
+              About Us
             </Nav.Link>
           </Nav.Item>
           <Nav.Item className="nav-item light-nav">
-            <Nav.Link className="nav-link"  href="#">
-              Link 2
+            <Nav.Link className="nav-link"  href="/">
+              Join Us
             </Nav.Link>
           </Nav.Item>
         </Nav>

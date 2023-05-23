@@ -1,0 +1,9 @@
+.about-heading{
+    font-size: var(--fs-xlarge);
+    
+  }
+  .about-subheading{
+    color:var(--text-color);
+    font-size: var(--fs-paragraph);
+  }
+  
