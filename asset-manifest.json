@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/client/static/css/main.f4c489ea.css",
-    "main.js": "/client/static/js/main.7b35604a.js",
+    "main.js": "/client/static/js/main.d5e98c75.js",
     "static/media/event-image.jpg": "/client/static/media/event-image.0c8113c5cdc7248b32eb.jpg",
     "static/media/person.jpeg": "/client/static/media/person.9cf73e9237c4b5727813.jpeg",
     "static/media/leafborderleft.png": "/client/static/media/leafborderleft.393f542b5d8fac3be68a.png",
@@ -11,10 +11,10 @@
     "static/media/headleaf.png": "/client/static/media/headleaf.ffe8772fe0783e0d5c26.png",
     "index.html": "/client/index.html",
     "main.f4c489ea.css.map": "/client/static/css/main.f4c489ea.css.map",
-    "main.7b35604a.js.map": "/client/static/js/main.7b35604a.js.map"
+    "main.d5e98c75.js.map": "/client/static/js/main.d5e98c75.js.map"
   },
   "entrypoints": [
     "static/css/main.f4c489ea.css",
-    "static/js/main.7b35604a.js"
+    "static/js/main.d5e98c75.js"
   ]
 }
