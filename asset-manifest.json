@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/curryleaf/static/css/main.12fd9205.css",
-    "main.js": "/curryleaf/static/js/main.65fdb5e8.js",
+    "main.css": "/curryleaf/static/css/main.f6345872.css",
+    "main.js": "/curryleaf/static/js/main.060de2b7.js",
     "static/media/event-image.jpg": "/curryleaf/static/media/event-image.0c8113c5cdc7248b32eb.jpg",
     "static/media/person.jpeg": "/curryleaf/static/media/person.9cf73e9237c4b5727813.jpeg",
     "static/media/leafborderleft.png": "/curryleaf/static/media/leafborderleft.393f542b5d8fac3be68a.png",
@@ -10,11 +10,11 @@
     "static/media/leafborder.png": "/curryleaf/static/media/leafborder.9eeff699b68d504cca01.png",
     "static/media/headleaf.png": "/curryleaf/static/media/headleaf.ffe8772fe0783e0d5c26.png",
     "index.html": "/curryleaf/index.html",
-    "main.12fd9205.css.map": "/curryleaf/static/css/main.12fd9205.css.map",
-    "main.65fdb5e8.js.map": "/curryleaf/static/js/main.65fdb5e8.js.map"
+    "main.f6345872.css.map": "/curryleaf/static/css/main.f6345872.css.map",
+    "main.060de2b7.js.map": "/curryleaf/static/js/main.060de2b7.js.map"
   },
   "entrypoints": [
-    "static/css/main.12fd9205.css",
-    "static/js/main.65fdb5e8.js"
+    "static/css/main.f6345872.css",
+    "static/js/main.060de2b7.js"
   ]
 }
