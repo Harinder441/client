@@ -3,6 +3,7 @@ import { Container,Nav,Image } from 'react-bootstrap';
 import './Hero.css';
 import logo from '../../assets/images/logo.jpeg';
 import ButtonMain from '../UI/ButtonMain';
+import {NavLink} from 'react-router-dom';
 export default function Hero() {
   return (
     <section className="hero-section">
@@ -20,24 +21,24 @@ export default function Hero() {
         </div>
         <Nav className="d-flex justify-content-center bot-navbar position-absolute bottom-0 start-0 w-100">
           <Nav.Item className ="nav-item dark-nav">
-            <Nav.Link className="nav-link"  href="events">
+            <NavLink className="nav-link"  to="events">
             ALL Events
-            </Nav.Link>
+            </NavLink>
           </Nav.Item>
           <Nav.Item className="nav-item light-nav">
-            <Nav.Link className="nav-link"  href="home">
+            <NavLink className="nav-link"  to="/">
             Contact Us 
-            </Nav.Link>
+            </NavLink>
           </Nav.Item>
           <Nav.Item className="nav-item dark-nav">
-            <Nav.Link className="nav-link"  href="about">
+            <NavLink className="nav-link"  to="about">
               About Us
-            </Nav.Link>
+            </NavLink>
           </Nav.Item>
           <Nav.Item className="nav-item light-nav">
-            <Nav.Link className="nav-link"  href="home">
+            <NavLink className="nav-link"  to="/">
               Join Us
-            </Nav.Link>
+            </NavLink>
           </Nav.Item>
         </Nav>
       </Container>

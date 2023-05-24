@@ -64,6 +64,7 @@
   color: inherit;
   font-size: 1.2rem;
   text-transform: uppercase;
+  text-decoration: none;
 }
 
 .dark-nav {

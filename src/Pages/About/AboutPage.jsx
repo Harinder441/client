@@ -3,7 +3,8 @@ import Introduction from '../../components/About/Introduction'
 import MemberDisplay from '../../components/Members/MemberDisplay'
 import { Container } from 'react-bootstrap'
 import './AboutPage.css'
-export default function AboutPage() {
+export default function AboutPage({setNavVisible}) {
+  setNavVisible(true);
   return (
     <div className='about-page'>
      

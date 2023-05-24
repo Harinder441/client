@@ -3,7 +3,8 @@ import EventHero from '../../components/EventsHero/EventHero'
 import EventDisplay from '../../components/EventCard/EventsDisplay'
 import EventCategories from '../../components/EventCard/EventsCatogies'
 import './EventsPage.css'
-export default function EventsPage() {
+export default function EventsPage({setNavVisible}) {
+  setNavVisible(true);
   return (
     <div className='event-page'>
        <EventHero></EventHero>

@@ -10,7 +10,7 @@
 
 .main-navbar .navbar-brand{
     font-size:var(--fs-heading);
-    color:inherit;
+    color:var(--fg-color);
 }
 
 .main-navbar .special-link,.main-navbar .nav-link {
@@ -21,4 +21,7 @@
     text-transform: uppercase;
     background: none;
 
+}
+.nav-link-n{
+    text-decoration: none;
 }

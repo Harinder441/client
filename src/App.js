@@ -3,25 +3,35 @@ import Home from './Pages/Home/Home';
 import EventPage from './Pages/Events/EventsPage';
 import AboutPage from './Pages/About/AboutPage';
 import NavbarMain from './components/Navbar/NavbarMain';
-import { RouterProvider, createBrowserRouter } from "react-router-dom";
+import { RouterProvider, createBrowserRouter,Route,Routes} from "react-router-dom";
 import Footer from './components/Footer/Footer';
 import { useState } from 'react';
 import SideLeafBorder from './components/UI/SideLeafBorder'
+
 export default function App() {
   const [isNavVisible, setNavVisible] = useState(true);
   const router = createBrowserRouter([
     {
-      path: "home",
+      path: "/curryleaf",
       element: <Home setNavVisible={setNavVisible} />,
-    },
-    {
-      path: "events",
-      element: <EventPage />,
-    },
-    {
-      path: "about",
-      element: <AboutPage />,
+      children:[
+        {
+          path: "home",
+          element: <Home setNavVisible={setNavVisible} />,
+        },
+        {
+          path: "events",
+          element: <EventPage setNavVisible={setNavVisible}/>,
+        },
+        {
+          path: "about",
+          element: <AboutPage setNavVisible={setNavVisible}/>,
+        }
+      ]
+
     }
+ 
+   
   ]);
 
   return (
@@ -30,7 +40,12 @@ export default function App() {
       {isNavVisible && <NavbarMain />}
       <SideLeafBorder left={true} right={true}>
         <div className={"page-container "+(()=>{if(isNavVisible) return ""; else return "mt-0";})()} >
-        <RouterProvider router={router} />
+        <Routes >
+          <Route path="/" element={<Home setNavVisible={setNavVisible} />}/>
+          <Route path="/about" element={<AboutPage  setNavVisible={setNavVisible}/>}/>
+          <Route path="/events" element={<EventPage  setNavVisible={setNavVisible}/>}/>
+        </Routes>
+        
       </div>
     </SideLeafBorder >
       <Footer />
